@@ -42,9 +42,7 @@ app.use('/', router)
 
 
 
-app.listen(3000, ()=>{
-console.log('server listening port 3000')
-})
+
 
 
 
@@ -63,3 +61,6 @@ app.set("view engine", "hbs");
 app.set("views", join(__dirname, '/views'));
 app.use(express.static(__dirname + "/views/layouts"));
 
+
+
+export default app
